@@ -11,6 +11,25 @@
 		4E25584029B22F41001C4C47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E25583F29B22F41001C4C47 /* ContentView.swift */; };
 		4E25584229B22F43001C4C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E25584129B22F43001C4C47 /* Assets.xcassets */; };
 		4E25584529B22F43001C4C47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E25584429B22F43001C4C47 /* Preview Assets.xcassets */; };
+		4E7CD73429B669E100E46374 /* DictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73329B669E100E46374 /* DictView.swift */; };
+		4E7CD73629B669EB00E46374 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73529B669EB00E46374 /* HomeView.swift */; };
+		4E7CD73829B669F900E46374 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73729B669F900E46374 /* ProjectsView.swift */; };
+		4E7CD73B29B66A4700E46374 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73A29B66A4700E46374 /* EditItemView.swift */; };
+		4E7CD73D29B66A6F00E46374 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73C29B66A6F00E46374 /* EditProjectView.swift */; };
+		4E7CD73F29B66A9200E46374 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73E29B66A9200E46374 /* ItemRowView.swift */; };
+		4E7CD74129B66AB000E46374 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74029B66AB000E46374 /* ProjectHeaderView.swift */; };
+		4E7CD74529B66B3F00E46374 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74429B66B3F00E46374 /* DataController.swift */; };
+		4E7CD74829B66B5B00E46374 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74629B66B5B00E46374 /* Main.xcdatamodeld */; };
+		4E7CD74B29B66BBB00E46374 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74A29B66BBB00E46374 /* Binding-OnChange.swift */; };
+		4E7CD74D29B66BD000E46374 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74C29B66BD000E46374 /* Sequence-Sorting.swift */; };
+		4E7CD74F29B66BE300E46374 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD74E29B66BE300E46374 /* Enums.swift */; };
+		4E7CD75229B66C1B00E46374 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75129B66C1B00E46374 /* Item-CoreDataHelpers.swift */; };
+		4E7CD75429B66C2D00E46374 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75329B66C2D00E46374 /* Project-CoreDataHelpers.swift */; };
+		4E7CD75729B66C5C00E46374 /* JMDictData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75629B66C5C00E46374 /* JMDictData.swift */; };
+		4E7CD75929B66C8200E46374 /* JMDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75829B66C8200E46374 /* JMDictModel.swift */; };
+		4E7CD75E29B66D9C00E46374 /* jmdict-eng-3.3.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */; };
+		4E7CD75F29B66D9C00E46374 /* jmdict-rus-3.3.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */; };
+		4E7CD76129B66DC000E46374 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD76029B66DC000E46374 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +38,25 @@
 		4E25583F29B22F41001C4C47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E25584129B22F43001C4C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E25584429B22F43001C4C47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E7CD73329B669E100E46374 /* DictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictView.swift; sourceTree = "<group>"; };
+		4E7CD73529B669EB00E46374 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4E7CD73729B669F900E46374 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		4E7CD73A29B66A4700E46374 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		4E7CD73C29B66A6F00E46374 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		4E7CD73E29B66A9200E46374 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		4E7CD74029B66AB000E46374 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		4E7CD74429B66B3F00E46374 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		4E7CD74729B66B5B00E46374 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		4E7CD74A29B66BBB00E46374 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		4E7CD74C29B66BD000E46374 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		4E7CD74E29B66BE300E46374 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4E7CD75129B66C1B00E46374 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		4E7CD75329B66C2D00E46374 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		4E7CD75629B66C5C00E46374 /* JMDictData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictData.swift; sourceTree = "<group>"; };
+		4E7CD75829B66C8200E46374 /* JMDictModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictModel.swift; sourceTree = "<group>"; };
+		4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jmdict-eng-3.3.1.json"; sourceTree = "<group>"; };
+		4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jmdict-rus-3.3.1.json"; sourceTree = "<group>"; };
+		4E7CD76029B66DC000E46374 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				4E25583D29B22F41001C4C47 /* JMDictionaryApp.swift */,
-				4E25583F29B22F41001C4C47 /* ContentView.swift */,
+				4E7CD73929B66A2000E46374 /* Views */,
+				4E7CD74229B66B2500E46374 /* Data */,
 				4E25584129B22F43001C4C47 /* Assets.xcassets */,
+				4E7CD76029B66DC000E46374 /* Colors.xcassets */,
 				4E25584329B22F43001C4C47 /* Preview Content */,
 			);
 			path = JMDictionary;
@@ -65,6 +105,111 @@
 				4E25584429B22F43001C4C47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E7CD73029B669A600E46374 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E25583F29B22F41001C4C47 /* ContentView.swift */,
+				4E7CD73329B669E100E46374 /* DictView.swift */,
+				4E7CD73529B669EB00E46374 /* HomeView.swift */,
+				4E7CD73729B669F900E46374 /* ProjectsView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		4E7CD73129B669B900E46374 /* Edit Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD73A29B66A4700E46374 /* EditItemView.swift */,
+				4E7CD73C29B66A6F00E46374 /* EditProjectView.swift */,
+			);
+			path = "Edit Views";
+			sourceTree = "<group>";
+		};
+		4E7CD73229B669C600E46374 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD73E29B66A9200E46374 /* ItemRowView.swift */,
+				4E7CD74029B66AB000E46374 /* ProjectHeaderView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		4E7CD73929B66A2000E46374 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD73029B669A600E46374 /* Main Views */,
+				4E7CD73129B669B900E46374 /* Edit Views */,
+				4E7CD73229B669C600E46374 /* Elements */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E7CD74229B66B2500E46374 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD74329B66B3000E46374 /* Core */,
+				4E7CD74929B66B9C00E46374 /* Extensions */,
+				4E7CD75029B66BFB00E46374 /* Helpers */,
+				4E7CD75529B66C3800E46374 /* JMDict */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4E7CD74329B66B3000E46374 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD74429B66B3F00E46374 /* DataController.swift */,
+				4E7CD74629B66B5B00E46374 /* Main.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4E7CD74929B66B9C00E46374 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD74A29B66BBB00E46374 /* Binding-OnChange.swift */,
+				4E7CD74C29B66BD000E46374 /* Sequence-Sorting.swift */,
+				4E7CD74E29B66BE300E46374 /* Enums.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E7CD75029B66BFB00E46374 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD75129B66C1B00E46374 /* Item-CoreDataHelpers.swift */,
+				4E7CD75329B66C2D00E46374 /* Project-CoreDataHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4E7CD75529B66C3800E46374 /* JMDict */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD75A29B66C8C00E46374 /* model */,
+				4E7CD75B29B66C9900E46374 /* jsons */,
+			);
+			path = JMDict;
+			sourceTree = "<group>";
+		};
+		4E7CD75A29B66C8C00E46374 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD75629B66C5C00E46374 /* JMDictData.swift */,
+				4E7CD75829B66C8200E46374 /* JMDictModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4E7CD75B29B66C9900E46374 /* jsons */ = {
+			isa = PBXGroup;
+			children = (
+				4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */,
+				4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */,
+			);
+			path = jsons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7CD76129B66DC000E46374 /* Colors.xcassets in Resources */,
+				4E7CD75E29B66D9C00E46374 /* jmdict-eng-3.3.1.json in Resources */,
 				4E25584529B22F43001C4C47 /* Preview Assets.xcassets in Resources */,
 				4E25584229B22F43001C4C47 /* Assets.xcassets in Resources */,
+				4E7CD75F29B66D9C00E46374 /* jmdict-rus-3.3.1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +285,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7CD75729B66C5C00E46374 /* JMDictData.swift in Sources */,
+				4E7CD73D29B66A6F00E46374 /* EditProjectView.swift in Sources */,
+				4E7CD75929B66C8200E46374 /* JMDictModel.swift in Sources */,
+				4E7CD74129B66AB000E46374 /* ProjectHeaderView.swift in Sources */,
+				4E7CD75429B66C2D00E46374 /* Project-CoreDataHelpers.swift in Sources */,
+				4E7CD73829B669F900E46374 /* ProjectsView.swift in Sources */,
 				4E25584029B22F41001C4C47 /* ContentView.swift in Sources */,
+				4E7CD74F29B66BE300E46374 /* Enums.swift in Sources */,
+				4E7CD74B29B66BBB00E46374 /* Binding-OnChange.swift in Sources */,
+				4E7CD73629B669EB00E46374 /* HomeView.swift in Sources */,
+				4E7CD74529B66B3F00E46374 /* DataController.swift in Sources */,
 				4E25583E29B22F41001C4C47 /* JMDictionaryApp.swift in Sources */,
+				4E7CD73429B669E100E46374 /* DictView.swift in Sources */,
+				4E7CD74D29B66BD000E46374 /* Sequence-Sorting.swift in Sources */,
+				4E7CD75229B66C1B00E46374 /* Item-CoreDataHelpers.swift in Sources */,
+				4E7CD73F29B66A9200E46374 /* ItemRowView.swift in Sources */,
+				4E7CD74829B66B5B00E46374 /* Main.xcdatamodeld in Sources */,
+				4E7CD73B29B66A4700E46374 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +503,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E7CD74629B66B5B00E46374 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E7CD74729B66B5B00E46374 /* Main.xcdatamodel */,
+			);
+			currentVersion = 4E7CD74729B66B5B00E46374 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E25583229B22F41001C4C47 /* Project object */;
 }
