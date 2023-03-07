@@ -32,6 +32,20 @@ struct JMDictWord: Codable, Identifiable {
     let sense: [JMdictSense]?
 }
 
+extension JMDictWord: Hashable {
+    static func == (lhs: JMDictWord, rhs: JMDictWord) -> Bool {
+        if lhs.id == rhs.id {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
 // MARK: - Kanji
 struct JMdictKanji: Codable {
     let common: Bool

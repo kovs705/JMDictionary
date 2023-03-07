@@ -20,7 +20,7 @@ struct DictView: View {
     var body: some View {
         List {
             ForEach(data.words) { word in
-                Text(word.kanji?.first?.text ?? "none")
+                Text(word.kanji?.first?.text ?? word.kana?.first?.text ?? "None")
             }
         }
     }
