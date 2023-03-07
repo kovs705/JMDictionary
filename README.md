@@ -1,4 +1,4 @@
-# JMDictionary
+# JMDictionary App
 
 Pet-project app using [**JMDict-Simplified**](https://github.com/scriptin/jmdict-simplified)  you can search the Japanese word and soon you could save favorites and edit details
 
