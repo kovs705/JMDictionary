@@ -28,8 +28,6 @@
 		4E7CD75429B66C2D00E46374 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75329B66C2D00E46374 /* Project-CoreDataHelpers.swift */; };
 		4E7CD75729B66C5C00E46374 /* JMDictData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75629B66C5C00E46374 /* JMDictData.swift */; };
 		4E7CD75929B66C8200E46374 /* JMDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75829B66C8200E46374 /* JMDictModel.swift */; };
-		4E7CD75E29B66D9C00E46374 /* jmdict-eng-3.3.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */; };
-		4E7CD75F29B66D9C00E46374 /* jmdict-rus-3.3.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */; };
 		4E7CD76129B66DC000E46374 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD76029B66DC000E46374 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +54,6 @@
 		4E7CD75329B66C2D00E46374 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		4E7CD75629B66C5C00E46374 /* JMDictData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictData.swift; sourceTree = "<group>"; };
 		4E7CD75829B66C8200E46374 /* JMDictModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictModel.swift; sourceTree = "<group>"; };
-		4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jmdict-eng-3.3.1.json"; sourceTree = "<group>"; };
-		4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jmdict-rus-3.3.1.json"; sourceTree = "<group>"; };
 		4E7CD76029B66DC000E46374 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				4E7CD75A29B66C8C00E46374 /* model */,
-				4E7CD75B29B66C9900E46374 /* jsons */,
 			);
 			path = JMDict;
 			sourceTree = "<group>";
@@ -204,15 +199,6 @@
 				4E7CD75829B66C8200E46374 /* JMDictModel.swift */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		4E7CD75B29B66C9900E46374 /* jsons */ = {
-			isa = PBXGroup;
-			children = (
-				4E7CD75C29B66D9C00E46374 /* jmdict-eng-3.3.1.json */,
-				4E7CD75D29B66D9C00E46374 /* jmdict-rus-3.3.1.json */,
-			);
-			path = jsons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,10 +261,8 @@
 			files = (
 				4E1599BC29B78EA50020A0C5 /* LICENSE.txt in Resources */,
 				4E7CD76129B66DC000E46374 /* Colors.xcassets in Resources */,
-				4E7CD75E29B66D9C00E46374 /* jmdict-eng-3.3.1.json in Resources */,
 				4E25584529B22F43001C4C47 /* Preview Assets.xcassets in Resources */,
 				4E25584229B22F43001C4C47 /* Assets.xcassets in Resources */,
-				4E7CD75F29B66D9C00E46374 /* jmdict-rus-3.3.1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
