@@ -64,6 +64,29 @@ class DataController: ObservableObject {
         try viewContext.save()
     }
     
+    func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+            (try? container.viewContext.count(for: fetchRequest)) ?? 0
+        }
+    
+    func hasEarned(award: Award) -> Bool {
+            switch award.criterion {
+            case "items":
+                let fetchRequest: NSFetchRequest<Word> = NSFetchRequest(entityName: "Word")
+                let awardCount = count(for: fetchRequest)
+                return awardCount >= award.value
+
+            case "complete":
+                let fetchRequest: NSFetchRequest<Word> = NSFetchRequest(entityName: "Word")
+                fetchRequest.predicate = NSPredicate(format: "completed = true")
+                let awardCount = count(for: fetchRequest)
+                return awardCount >= award.value
+
+            default:
+    //            fatalError("Unknown award criterion \(award.criterion).")
+                return false
+            }
+        }
+    
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
