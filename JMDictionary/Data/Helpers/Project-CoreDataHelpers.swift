@@ -25,7 +25,7 @@ extension Group {
         ]
     
     var groupTitle: String {
-        title ?? "New project"
+        title ?? NSLocalizedString("New Project", comment: "Create a new group")
     }
     
     var groupDetail: String {

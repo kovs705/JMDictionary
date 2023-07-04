@@ -14,7 +14,7 @@ extension Word {
     }
     
     var wordTitle: String {
-        title ?? "New Item"
+        title ?? NSLocalizedString("New Item", comment: "Create a new word")
     }
     
     var wordDetail: String {
