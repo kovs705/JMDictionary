@@ -64,6 +64,7 @@ struct HomeView: View {
                         // LazyHGrid
                         .padding([.horizontal, .top])
                         .fixedSize(horizontal: false, vertical: true)
+                        
                     }
                     // scrollView inside
                     
@@ -73,11 +74,11 @@ struct HomeView: View {
                     }.padding(.horizontal)
                 }
             }
-            // ain ScrollView
-            
-            
+            // main ScrollView
+            .background(Image("back").ignoresSafeArea())
             .navigationTitle("Home")
         }
+        
     }
     
     @ViewBuilder func list(_ title: String, for words: FetchedResults<Word>.SubSequence) -> some View {
@@ -100,6 +101,7 @@ struct HomeView: View {
                             Text(word.wordTitle)
                                 .font(.title2)
                                 .foregroundColor(.primary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             
                             if word.wordDetail.isEmpty == false {
                                 Text(word.wordDetail)
@@ -112,7 +114,6 @@ struct HomeView: View {
                     .background(BlurView(style: .regular))
                     .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.2), radius: 5)
-                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 // navigationLink
             }

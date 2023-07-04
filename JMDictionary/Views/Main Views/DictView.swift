@@ -8,20 +8,29 @@
 import SwiftUI
 
 struct DictView: View {
-    
     static let dictTag: String? = "dict"
-    // test comment
-    // test comment 2
-    // test comment 3
     
-    @EnvironmentObject var jMDictData: JMDictData
-    var data: JMDictionary = JMDictData().dictionaryData
+    @ObservedObject var jMDictData = JMDictData()
     
     var body: some View {
-        List {
-            ForEach(data.words) { word in
-                Text(word.kanji?.first?.text ?? word.kana?.first?.text ?? "None")
+        NavigationView {
+            if jMDictData.isLoading {
+                // Show loading view while data is being loaded
+                Text("Loading...")
+            } else if let data = jMDictData.dictionaryData {
+                // Show list view when data is loaded
+                List {
+                    ForEach(data.words) { word in
+                        Text(word.kanji?.first?.text ?? word.kana?.first?.text ?? "None")
+                    }
+                }
+            } else {
+                // Show error view if loading failed
+                Text("Failed to load data.")
             }
+        }
+        .onAppear {
+            jMDictData.loadData(filename: JMDictVersions.eng)
         }
     }
 }
