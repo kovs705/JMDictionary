@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 final class JMDictData: ObservableObject {
     @Published var dictionaryData: JMDictionary?
     @Published var isLoading = false

@@ -57,4 +57,3 @@ struct AwardsView_Previews: PreviewProvider {
         AwardsView()
     }
 }
-

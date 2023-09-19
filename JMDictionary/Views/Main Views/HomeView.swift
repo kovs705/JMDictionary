@@ -75,7 +75,7 @@ struct HomeView: View {
                 }
             }
             // main ScrollView
-            .background(Image("back").ignoresSafeArea())
+//            .background(Image("back").ignoresSafeArea())
             .navigationTitle("Home")
         }
         

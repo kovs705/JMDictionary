@@ -20,7 +20,6 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
         
-        
         container.loadPersistentStores { storeDescription, error in
             if let error = error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
@@ -92,7 +91,6 @@ class DataController: ObservableObject {
             try? container.viewContext.save()
         }
     }
-    
     
     func delete(_ object: NSManagedObject) {
         container.viewContext.delete(object)
