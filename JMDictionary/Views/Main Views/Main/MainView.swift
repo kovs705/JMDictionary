@@ -20,6 +20,11 @@ struct MainView: View {
         [GridItem(.flexible(minimum: 100, maximum: 130))]
     }
     
+    var wordRows: [GridItem] {
+        [GridItem(.adaptive(minimum: 100, maximum: 130)),
+        GridItem(.adaptive(minimum: 100, maximum: 130))]
+    }
+    
     init() {
         let request: NSFetchRequest<Word> = Word.fetchRequest()
         request.predicate = NSPredicate(format: "completed = false")
@@ -54,7 +59,7 @@ struct MainView: View {
                         .background(BlurView(style: .regular))
                         .frame(width: .infinity, height: .infinity)
                     
-                    VStack {
+                    LazyVGrid(columns: wordRows) {
                         ForEach(words.wrappedValue, id: \.self) { word in
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
