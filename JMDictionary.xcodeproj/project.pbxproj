@@ -36,6 +36,10 @@
 		4E7CD75729B66C5C00E46374 /* JMDictData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75629B66C5C00E46374 /* JMDictData.swift */; };
 		4E7CD75929B66C8200E46374 /* JMDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD75829B66C8200E46374 /* JMDictModel.swift */; };
 		4E7CD76129B66DC000E46374 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7CD76029B66DC000E46374 /* Colors.xcassets */; };
+		E55776832ABE02CB00BDDD62 /* C1ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55776822ABE02CB00BDDD62 /* C1ProjectsView.swift */; };
+		E55776862ABE03D700BDDD62 /* C1ProjectsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55776852ABE03D700BDDD62 /* C1ProjectsVM.swift */; };
+		E55776882ABE124800BDDD62 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55776872ABE124800BDDD62 /* CircularView.swift */; };
+		E557768B2ABE17FA00BDDD62 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557768A2ABE17FA00BDDD62 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,10 @@
 		4E7CD75629B66C5C00E46374 /* JMDictData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictData.swift; sourceTree = "<group>"; };
 		4E7CD75829B66C8200E46374 /* JMDictModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictModel.swift; sourceTree = "<group>"; };
 		4E7CD76029B66DC000E46374 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E55776822ABE02CB00BDDD62 /* C1ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1ProjectsView.swift; sourceTree = "<group>"; };
+		E55776852ABE03D700BDDD62 /* C1ProjectsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1ProjectsVM.swift; sourceTree = "<group>"; };
+		E55776872ABE124800BDDD62 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		E557768A2ABE17FA00BDDD62 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +151,12 @@
 		4E7CD73029B669A600E46374 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
+				E55776892ABE17EF00BDDD62 /* Main */,
 				4E25583F29B22F41001C4C47 /* ContentView.swift */,
 				4E7CD73329B669E100E46374 /* DictView.swift */,
 				4E7CD73529B669EB00E46374 /* HomeView.swift */,
 				4E7CD73729B669F900E46374 /* ProjectsView.swift */,
+				E55776842ABE03BF00BDDD62 /* Projects */,
 				4E7C50802A548A6400B24E80 /* AwardsView.swift */,
 			);
 			path = "Main Views";
@@ -166,6 +176,7 @@
 			children = (
 				4E7CD73E29B66A9200E46374 /* ItemRowView.swift */,
 				4E7CD74029B66AB000E46374 /* ProjectHeaderView.swift */,
+				E55776872ABE124800BDDD62 /* CircularView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -238,6 +249,23 @@
 				4E7CD75829B66C8200E46374 /* JMDictModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		E55776842ABE03BF00BDDD62 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				E55776822ABE02CB00BDDD62 /* C1ProjectsView.swift */,
+				E55776852ABE03D700BDDD62 /* C1ProjectsVM.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		E55776892ABE17EF00BDDD62 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E557768A2ABE17FA00BDDD62 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -351,11 +379,15 @@
 				4E7CD74B29B66BBB00E46374 /* Binding-OnChange.swift in Sources */,
 				4E7CD73629B669EB00E46374 /* HomeView.swift in Sources */,
 				4E7CD74529B66B3F00E46374 /* DataController.swift in Sources */,
+				E55776862ABE03D700BDDD62 /* C1ProjectsVM.swift in Sources */,
+				E557768B2ABE17FA00BDDD62 /* MainView.swift in Sources */,
 				4E25583E29B22F41001C4C47 /* JMDictionaryApp.swift in Sources */,
 				4E7C50902A54969500B24E80 /* BlurView.swift in Sources */,
 				4E7CD73429B669E100E46374 /* DictView.swift in Sources */,
 				4E7CD74D29B66BD000E46374 /* Sequence-Sorting.swift in Sources */,
 				4E7CD75229B66C1B00E46374 /* Item-CoreDataHelpers.swift in Sources */,
+				E55776882ABE124800BDDD62 /* CircularView.swift in Sources */,
+				E55776832ABE02CB00BDDD62 /* C1ProjectsView.swift in Sources */,
 				4E7CD73F29B66A9200E46374 /* ItemRowView.swift in Sources */,
 				4E7CD74829B66B5B00E46374 /* Main.xcdatamodeld in Sources */,
 				4E7CD73B29B66A4700E46374 /* EditItemView.swift in Sources */,
@@ -513,11 +545,13 @@
 				DEVELOPMENT_TEAM = 5PVHGUKPAW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,11 +576,13 @@
 				DEVELOPMENT_TEAM = 5PVHGUKPAW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

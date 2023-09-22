@@ -44,7 +44,7 @@ struct HomeView: View {
                         LazyHGrid(rows: groupRows) {
                             ForEach(groups) { group in
                                 VStack(alignment: .leading) {
-                                    Text("\(group.groupItems.count) groups")
+                                    Text("\(group.groupItems.count) words")
                                         .font(.caption)
                                         .foregroundColor(.secondary)
                                     
