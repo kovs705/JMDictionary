@@ -55,18 +55,18 @@ struct MainView: View {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color.white.opacity(0.1))
                             .background(BlurView(style: .regular))
-                            .frame(width: .infinity, height: .infinity)
                         
                         wordGrid()
                     }
                     .background(Color.clear)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .frame(height: .infinity)
                     .padding(.top, 40)
                     .padding(.horizontal, 20)
                     
                     VStack(alignment: .leading) {
-                        list("Up next", for: words.wrappedValue.prefix(3))
+                        if words.wrappedValue.count > 6 {
+                            list("Up next", for: words.wrappedValue.prefix(3))
+                        }
                     }.padding(.horizontal)
                     
                     Spacer().frame(height: 75)
@@ -139,7 +139,6 @@ struct MainView: View {
             .padding(.vertical)
             .background(BlurView(style: .regular))
         }
-        .frame(height: .infinity)
     }
     
     @ViewBuilder func titleHeader() -> some View {

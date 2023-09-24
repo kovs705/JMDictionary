@@ -57,6 +57,7 @@ struct ProjectsView: View {
                                 withAnimation {
                                     let word = Word(context: managedObjectContext)
                                     word.group = group
+                                    word.completed = false
                                     word.creationDate = Date()
                                     dataController.save()
                                 }
