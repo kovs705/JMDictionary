@@ -13,7 +13,7 @@ struct DictView: View {
     @ObservedObject var jMDictData = JMDictData()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             if jMDictData.isLoading {
                 // Show loading view while data is being loaded
                 Text("Loading...")
@@ -23,6 +23,8 @@ struct DictView: View {
                     ForEach(data.words) { word in
                         Text(word.kanji?.first?.text ?? word.kana?.first?.text ?? "None")
                     }
+                    
+                    Spacer().frame(height: 80)
                 }
             } else {
                 // Show error view if loading failed
@@ -30,7 +32,7 @@ struct DictView: View {
             }
         }
         .onAppear {
-            jMDictData.loadData(filename: JMDictVersions.eng)
+//            jMDictData.loadData(filename: JMDictVersions.eng)
         }
     }
 }

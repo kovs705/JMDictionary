@@ -34,7 +34,7 @@ struct ProjectsView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(groups.wrappedValue) { group in
                     Section(header: ProjectHeaderView(group: group)) {
@@ -74,6 +74,8 @@ struct ProjectsView: View {
                         ])
                     }
                 }
+                
+//                Spacer().frame(height: 75)
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")

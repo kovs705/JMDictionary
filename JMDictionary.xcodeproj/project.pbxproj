@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4E1599BC29B78EA50020A0C5 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E1599BB29B78EA50020A0C5 /* LICENSE.txt */; };
 		4E25583E29B22F41001C4C47 /* JMDictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E25583D29B22F41001C4C47 /* JMDictionaryApp.swift */; };
-		4E25584029B22F41001C4C47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E25583F29B22F41001C4C47 /* ContentView.swift */; };
 		4E25584229B22F43001C4C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E25584129B22F43001C4C47 /* Assets.xcassets */; };
 		4E25584529B22F43001C4C47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E25584429B22F43001C4C47 /* Preview Assets.xcassets */; };
 		4E7C507A2A5486D400B24E80 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E7C507C2A5486D400B24E80 /* Localizable.strings */; };
@@ -20,7 +19,6 @@
 		4E7C508E2A54924B00B24E80 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C508D2A54924B00B24E80 /* Bundle-Decodable.swift */; };
 		4E7C50902A54969500B24E80 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C508F2A54969500B24E80 /* BlurView.swift */; };
 		4E7CD73429B669E100E46374 /* DictView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73329B669E100E46374 /* DictView.swift */; };
-		4E7CD73629B669EB00E46374 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73529B669EB00E46374 /* HomeView.swift */; };
 		4E7CD73829B669F900E46374 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73729B669F900E46374 /* ProjectsView.swift */; };
 		4E7CD73B29B66A4700E46374 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73A29B66A4700E46374 /* EditItemView.swift */; };
 		4E7CD73D29B66A6F00E46374 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CD73C29B66A6F00E46374 /* EditProjectView.swift */; };
@@ -40,13 +38,14 @@
 		E55776862ABE03D700BDDD62 /* C1ProjectsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55776852ABE03D700BDDD62 /* C1ProjectsVM.swift */; };
 		E55776882ABE124800BDDD62 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55776872ABE124800BDDD62 /* CircularView.swift */; };
 		E557768B2ABE17FA00BDDD62 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557768A2ABE17FA00BDDD62 /* MainView.swift */; };
+		E5E3E32B2AC014BF0010B13C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E3E32A2AC014BF0010B13C /* TabBar.swift */; };
+		E5E3E32E2AC019550010B13C /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E3E32D2AC019550010B13C /* TabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E1599BB29B78EA50020A0C5 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4E25583A29B22F41001C4C47 /* JMDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E25583D29B22F41001C4C47 /* JMDictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMDictionaryApp.swift; sourceTree = "<group>"; };
-		4E25583F29B22F41001C4C47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E25584129B22F43001C4C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E25584429B22F43001C4C47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E7C507B2A5486D400B24E80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		4E7C508D2A54924B00B24E80 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		4E7C508F2A54969500B24E80 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		4E7CD73329B669E100E46374 /* DictView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictView.swift; sourceTree = "<group>"; };
-		4E7CD73529B669EB00E46374 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E7CD73729B669F900E46374 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		4E7CD73A29B66A4700E46374 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		4E7CD73C29B66A6F00E46374 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		E55776852ABE03D700BDDD62 /* C1ProjectsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1ProjectsVM.swift; sourceTree = "<group>"; };
 		E55776872ABE124800BDDD62 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		E557768A2ABE17FA00BDDD62 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E5E3E32A2AC014BF0010B13C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		E5E3E32D2AC019550010B13C /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,12 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				E55776892ABE17EF00BDDD62 /* Main */,
-				4E25583F29B22F41001C4C47 /* ContentView.swift */,
-				4E7CD73329B669E100E46374 /* DictView.swift */,
-				4E7CD73529B669EB00E46374 /* HomeView.swift */,
-				4E7CD73729B669F900E46374 /* ProjectsView.swift */,
 				E55776842ABE03BF00BDDD62 /* Projects */,
+				4E7CD73329B669E100E46374 /* DictView.swift */,
+				4E7CD73729B669F900E46374 /* ProjectsView.swift */,
 				4E7C50802A548A6400B24E80 /* AwardsView.swift */,
+				E5E3E32A2AC014BF0010B13C /* TabBar.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -194,6 +193,7 @@
 		4E7CD74229B66B2500E46374 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E5E3E32C2AC019410010B13C /* Models */,
 				4E7C50792A5486A700B24E80 /* Localization */,
 				4E7CD74329B66B3000E46374 /* Core */,
 				4E7CD74929B66B9C00E46374 /* Extensions */,
@@ -266,6 +266,14 @@
 				E557768A2ABE17FA00BDDD62 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E5E3E32C2AC019410010B13C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5E3E32D2AC019550010B13C /* TabItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,14 +382,14 @@
 				4E7CD75429B66C2D00E46374 /* Project-CoreDataHelpers.swift in Sources */,
 				4E7C50812A548A6400B24E80 /* AwardsView.swift in Sources */,
 				4E7CD73829B669F900E46374 /* ProjectsView.swift in Sources */,
-				4E25584029B22F41001C4C47 /* ContentView.swift in Sources */,
+				E5E3E32B2AC014BF0010B13C /* TabBar.swift in Sources */,
 				4E7CD74F29B66BE300E46374 /* Enums.swift in Sources */,
 				4E7CD74B29B66BBB00E46374 /* Binding-OnChange.swift in Sources */,
-				4E7CD73629B669EB00E46374 /* HomeView.swift in Sources */,
 				4E7CD74529B66B3F00E46374 /* DataController.swift in Sources */,
 				E55776862ABE03D700BDDD62 /* C1ProjectsVM.swift in Sources */,
 				E557768B2ABE17FA00BDDD62 /* MainView.swift in Sources */,
 				4E25583E29B22F41001C4C47 /* JMDictionaryApp.swift in Sources */,
+				E5E3E32E2AC019550010B13C /* TabItem.swift in Sources */,
 				4E7C50902A54969500B24E80 /* BlurView.swift in Sources */,
 				4E7CD73429B669E100E46374 /* DictView.swift in Sources */,
 				4E7CD74D29B66BD000E46374 /* Sequence-Sorting.swift in Sources */,
@@ -556,7 +564,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingKovs.JMDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -587,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingKovs.JMDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

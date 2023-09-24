@@ -45,7 +45,7 @@ class DataController: ObservableObject {
         
         for i in 1...5 {
             let group = Group(context: viewContext)
-            group.title = "Project \(i)"
+            group.title = "Group \(i)"
             group.words = []
             group.creationDate = Date()
             group.closed = Bool.random()

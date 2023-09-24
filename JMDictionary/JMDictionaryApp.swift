@@ -20,7 +20,7 @@ struct JMDictionaryApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)
