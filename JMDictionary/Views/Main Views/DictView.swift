@@ -13,13 +13,21 @@ struct DictView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVStack {
-                    ForEach(coordinator.dictionary) { word in
-                        HStack {
-                            Text((word.kana?.first?.text ?? word.kanji?.first?.text) ?? "Empty")
-                            Spacer()
+                if coordinator.dictionary.isEmpty {
+                    VStack(alignment: .center, spacing: 25) {
+                        Text("No data")
+                            .font(.title)
+                        Text("Unzip json file in JSON folder and place it inside xcode!\nBut don't open it, I warned you.")
+                    }
+                } else  {
+                    LazyVStack {
+                        ForEach(coordinator.dictionary) { word in
+                            HStack {
+                                Text((word.kana?.first?.text ?? word.kanji?.first?.text) ?? "Empty")
+                                Spacer()
+                            }
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
                     }
                 }
             }
