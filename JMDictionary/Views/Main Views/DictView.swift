@@ -8,40 +8,27 @@
 import SwiftUI
 
 struct DictView: View {
-    static let dictTag: String? = "dict"
-    
-    @ObservedObject var jMDictData = JMDictData()
-    
+    @StateObject private var coordinator = JMDictCoordinator()
+
     var body: some View {
         NavigationStack {
-            if jMDictData.isLoading {
-                // Show loading view while data is being loaded
-                Text("Loading...")
-            } else if let data = jMDictData.dictionaryData {
-                // Show list view when data is loaded
-                List {
-                    ForEach(data.words) { word in
-                        Text(word.kanji?.first?.text ?? word.kana?.first?.text ?? "None")
+            ScrollView {
+                LazyVStack {
+                    ForEach(coordinator.dictionary) { word in
+                        HStack {
+                            Text((word.kana?.first?.text ?? word.kanji?.first?.text) ?? "Empty")
+                            Spacer()
+                        }
+                        .padding(.horizontal)
                     }
-                    
-                    Spacer().frame(height: 80)
                 }
-            } else {
-                // Show error view if loading failed
-                Text("Failed to load data.")
             }
-        }
-        .onAppear {
-//            jMDictData.loadData(filename: JMDictVersions.eng)
+            .onAppear {
+                coordinator.getTheJapaneseData()
+            }
+            .onDisappear {
+                coordinator.clearData()
+            }
         }
     }
 }
-
-//struct DictView_Previews: PreviewProvider {
-//    static var jm = JMDictData()
-//
-//    static var previews: some View {
-//        DictView(data: jm.dictionaryData.first!)
-//            .environmentObject(JMDictData())
-//    }
-//}

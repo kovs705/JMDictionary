@@ -237,6 +237,7 @@
 		4E7CD75529B66C3800E46374 /* JMDict */ = {
 			isa = PBXGroup;
 			children = (
+				E5C425A72AEC238C000CE948 /* JSON */,
 				4E7CD75A29B66C8C00E46374 /* model */,
 			);
 			path = JMDict;
@@ -266,6 +267,13 @@
 				E557768A2ABE17FA00BDDD62 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E5C425A72AEC238C000CE948 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		E5E3E32C2AC019410010B13C /* Models */ = {

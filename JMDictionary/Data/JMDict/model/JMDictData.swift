@@ -7,33 +7,77 @@
 
 import Foundation
 
-final class JMDictData: ObservableObject {
-    @Published var dictionaryData: JMDictionary?
-    @Published var isLoading = false
+class JMDictCoordinator: ObservableObject {
+    /// file name
+    let JMFileName = "jmdict-eng-3.5.0"
+    /// number of elements to load per each
+    let batchSize = 300
     
-    func loadData(filename: String) {
-        isLoading = true
-        
-        guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
-            fatalError("Couldn't find \(filename) in main bundle.")
-        }
-        
-        URLSession.shared.dataTask(with: file) { [weak self] (data, _, error) in
+    /// async queue
+    let JMDictqueue = DispatchQueue(label: "jmdict-queue", attributes: .concurrent)
+    
+    /// dictionary to store the loaded elements
+    @Published var dictionary: [JMDictWord] = []
+    
+    /// get the japanese data asynchronously
+    func getTheJapaneseData() {
+        JMDictqueue.async { [weak self] in
             guard let self = self else { return }
-            self.isLoading = false
             
-            if let error = error {
-                fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-            }
-            
-            if let data = data {
-                do {
-                    let decoder = JSONDecoder()
-                    self.dictionaryData = try decoder.decode(JMDictionary.self, from: data)
-                } catch {
-                    fatalError("Couldn't parse \(filename) as \(JMDictionary.self):\n\(error)")
+            do {
+                guard let fileURL = Bundle.main.url(forResource: self.JMFileName, withExtension: "json") else {
+                    print("JSON file not found")
+                    return
                 }
+                
+                let session = URLSession.shared
+                let task = session.dataTask(with: fileURL) { [weak self] (data, response, error) in
+                    guard let self = self else { return }
+                    
+                    if let error = error {
+                        print("Error downloading JSON file:", error)
+                        return
+                    }
+                    
+                    if let data = data {
+                        do {
+                            let decoder = JSONDecoder()
+                            let json = try decoder.decode(JMDictionary.self, from: data)
+                            
+                            // Process the JSON data in batches
+                            var currentIndex = 0
+                            while currentIndex < json.words.count {
+                                let endIndex = min(currentIndex + self.batchSize, json.words.count)
+                                let elements = Array(json.words[currentIndex..<endIndex])
+                                
+                                DispatchQueue.main.async {
+                                    if elements.allSatisfy({ word in
+                                        return word.kana?.first?.text.isEmpty == false || word.kanji?.first?.text.isEmpty == false
+                                    }) {
+                                        self.dictionary.append(contentsOf: elements)
+                                    }
+                                }
+                                
+                                // Add a delay between each batch for better UI responsiveness
+                                Thread.sleep(forTimeInterval: 0.5)
+                                
+                                // Updating the current index for the next iteration
+                                currentIndex = endIndex
+                            }
+                            
+                            print("JSON processing completed")
+                        } catch {
+                            print("Error processing JSON file:", error)
+                        }
+                    }
+                }
+                
+                task.resume()
             }
-        }.resume()
+        }
+    }
+    
+    func clearData() {
+        dictionary.removeAll()
     }
 }
