@@ -1,6 +1,16 @@
 # JMDictionary App
 
-Pet-project app using [**JMDict-Simplified**](https://github.com/scriptin/jmdict-simplified)  you can search the Japanese word and soon you could save favorites and edit details
+Pet-project app using [**JMDict-Simplified**](https://github.com/scriptin/jmdict-simplified) Search, Save and Learn Japanese words!
+
+## Stack
+ - MVVM + MVI
+ - [The JMDict Project](https://www.edrdg.org/jmdict/j_jmdict.html)
+ - SwiftUI
+
+## Requirements
+
+## Screenshots
+
 
 Original XML files - **JMdict.xml, JMdict_e.xml, and JMnedict.xml** - are the property of the Electronic Dictionary Research and Development Group, and are used in conformance with the Group's [license](http://www.edrdg.org/edrdg/licence.html). Project started in 1991 by Jim Breen.
 
