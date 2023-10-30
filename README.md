@@ -8,8 +8,21 @@ Pet-project app using [**JMDict-Simplified**](https://github.com/scriptin/jmdict
  - SwiftUI
 
 ## Requirements
+- iOS 16.0+
 
 ## Screenshots
+### Main page
+<img src="https://user-images.githubusercontent.com/56929597/278714133-0978ad40-252f-4d7b-bae1-d04c849dda2d.png" 
+     width="356" height="665">
+
+### Page with groups and words
+<img src="https://user-images.githubusercontent.com/56929597/278714170-d61826a8-1d44-43d3-8e9e-a79d40423763.png" 
+     width="356" height="665">
+
+### Basic list from JMDict
+<img src="https://user-images.githubusercontent.com/56929597/278714188-6a4f7b81-e21e-4075-9dcd-3667868ced39.png" 
+     width="356" height="665">
+
 
 
 Original XML files - **JMdict.xml, JMdict_e.xml, and JMnedict.xml** - are the property of the Electronic Dictionary Research and Development Group, and are used in conformance with the Group's [license](http://www.edrdg.org/edrdg/licence.html). Project started in 1991 by Jim Breen.
